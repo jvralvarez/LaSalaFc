@@ -40,11 +40,11 @@ function showGallery() {
         <div class="gallery">
             <button class="close-gallery" onclick="closeGallery()">X</button>
             <button class="nav-button prev" onclick="changeSlide(-1)">&#10094;</button>
-            <button class="nav-button next" onclick="changeSlide(1)">&#10095;</button><img src="assets/aficion1.JPG" class="active">
-            <img src="assets/aficion2.JPG">
-            <img src="assets/aficion3.JPG">
-            <img src="assets/aficion4.JPG">
-            <img src="assets/aficion5.JPG">
+            <button class="nav-button next" onclick="changeSlide(1)">&#10095;</button><img src="assets/aficion1.png" class="active">
+            <img src="assets/aficion2.png">
+            <img src="assets/aficion3.png">
+            <img src="assets/aficion4.png">
+            <img src="assets/aficion5.png">
         </div>
     `;
     document.body.insertAdjacentHTML('beforeend', galleryHTML);
