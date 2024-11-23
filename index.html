@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Sala FC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hero-image">
+        <div class="menu-icon" onclick="toggleMenu()">
+            ☰
+        </div>
+        <div class="menu" id="menu">
+            <button class="close-btn" onclick="toggleMenu()">X</button>
+            <ul>
+                <li onclick="toggleSubmenu('liga')">Liga</li>
+                <ul id="liga" class="submenu">
+                    <li onclick="toggleSubmenu('temporada-24-25')">Temporada 24/25</li>
+                    <ul id="temporada-24-25" class="submenu">
+                        <li onclick="showMatch(1)">Jornada 1</li>
+                        <li onclick="showMatch(2)">Jornada 2</li>
+                        <li onclick="showMatch(3)">Jornada 3</li>
+                        <li onclick="showMatch(4)">Jornada 4</li>
+                        <li onclick="showMatch(5)">Jornada 5</li>
+                        <li onclick="showMatch(6)">Jornada 6</li>
+                    </ul>
+                </ul>
+                <li onclick="toggleSubmenu('copa')">Copa</li>
+                <ul id="copa" class="submenu">
+                    <li onclick="toggleSubmenu('temporada-23-24')">Temporada 23/24</li>
+                    <ul id="temporada-23-24" class="submenu">
+                        <li onclick="showCup(1)">Jornada 1</li>
+                        <li onclick="showCup(2)">Jornada 2</li>
+                        <li onclick="showCup(3)">Jornada 3</li>
+                    </ul>
+                </ul>
+                <li onclick="navigateTo('aficion')">Afición</li>
+            </ul>
+        </div>
+    </div>
+    <div id="content"></div>
+    <script src="script.js"></script>
+</body>
+</html>
